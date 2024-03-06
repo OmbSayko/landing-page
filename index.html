@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo NavBar</title>
+    <!-- CSS Native -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Min Media Queryes -->
+    <link rel="stylesheet" href="assets/css/min.media.queryes.css">
+    <!-- Icons Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Start-->
+    <header>
+        <div class="logo">
+            <a href="#">Medical Socials <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
+                    <path
+                        d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+                </svg></a>
+        </div>
+        <nav id="menu">
+            <div class="close-menu" id="close">
+                <i class="bi bi-x"></i>
+            </div>
+            <ul class="hamburger-menu">
+                <li><a class="active-a-h" href="#Home" onclick="setActiveLink(this)">Inicio</a></li>
+                <li><a href="#About-Us" onclick="setActiveLink(this)">Sobre nosotros</a></li>
+                <li><a href="#Services" onclick="setActiveLink(this)">Servicios</a></li>
+                <li><a href="#Donations" onclick="setActiveLink(this)">Donaciones</a></li>
+                <li><a href="#Contact" onclick="setActiveLink(this)">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="open-menu" id="open">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <div class="hero" id="Home">
+        <div class="main-hero">
+            <h1>Cuidamos tu salud</h1>
+            <h1><span>Medical</span> Socials.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="cite-content">
+                <button type="button">Agendar Cita <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
+                        <path
+                            d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+                    </svg></button>
+            </div>
+            <div class="bar-hero">
+                <div class="bar-hero-txt">
+                    <h1>24/7</h1>
+                    <pre>Servimos</pre>
+                </div>
+                <hr>
+                <div class="bar-hero-txt">
+                    <h1>90/día</h1>
+                    <pre>Consultas</pre>
+                </div>
+                <hr>
+                <div class="bar-hero-txt">
+                    <h1>25+</h1>
+                    <pre>Expertos</pre>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <img src="assets/img/hero/hero.png" alt="hero">
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Us Start -->
+    <section class="container" id="About-Us">
+        <div class="hr-content">
+            <hr>
+            <h1><i style="font-size: 37px;" class="bi bi-arrow-down-square"></i></h1>
+            <hr>
+        </div>
+        <div class="about-us">
+            <div class="about-us-content">
+                <h1>¿Quiénes Somos?</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, mollitia.</p>
+                <div class="abouts-buttons">
+                    <button type="button">Saber más <i class="bi bi-arrow-right"></i></button>
+                    <button class="about-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                        </svg> Conocenos</button>
+                </div>
+            </div>
+            <div class="about-us-img">
+                <img src="assets/img/about-us/about-us.jpg" alt="about-us">
+                <img class="img-about-2" src="assets/img/about-us/about-us-2.jpg" alt="about-us-2">
+                <img class="decorations" src="assets/img/about-us/background-decorations.png" alt="decorations-02">
+            </div>
+        </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Services Start -->
+    <section class="container" id="Services">
+        <div class="hr-content">
+            <hr>
+            <h1><i style="font-size: 37px;" class="bi bi-arrow-down-square"></i></h1>
+            <hr>
+        </div>
+        <div class="services">
+            <div class="services-content">
+                <h1>¡Especialidades!</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aliquid sint ex magnam cupiditate
+                    soluta.</p>
+                <div class="services-specialties">
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-01.png" alt="specialties-01">
+                        <h2>Cardiología</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-02.png" alt="specialties-02">
+                        <h2>Neurología</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-03.png" alt="specialties-03">
+                        <h2>Gastroenterologia</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-04.png" alt="specialties-04">
+                        <h2>Nefrología</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-05.png" alt="specialties-05">
+                        <h2>Oncología</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="specialties">
+                        <img src="assets/img/specialties/specialties-06.png" alt="specialties-06">
+                        <h2>Dermatología</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Donations Stat -->
+    <section class="container" id="Donations">
+        <div class="hr-content">
+            <hr>
+            <h1><i style="font-size: 37px;" class="bi bi-arrow-down-square"></i></h1>
+            <hr>
+        </div>
+        <div class="donations">
+            <div class="donations-main-hero">
+                <h1>Donaciones</h1>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aliquid sint ex magnam cupiditate
+                    soluta.</p>
+                <div class="donations-menu">
+                    <ul>
+                        <li><a onclick="showByCountry('Todos')">Todos<i class="bi bi-chevron-expand"></i></a></li>
+                        <li class="single-or-double-container"><a onclick="showByCountry('México')">México</a></li>
+                        <li class="single-or-double-container"><a onclick="showByCountry('Estados Unidos')">Estados
+                                Unidos</a></li>
+                        <li class="single-or-double-container"><a onclick="showByCountry('Alemania')">Alemania</a></li>
+                        <li class="single-or-double-container"><a onclick="showByCountry('Colombia')">Colombia</a></li>
+                        <li class="single-or-double-container"><a onclick="showByCountry('España')">España</a></li>
+                    </ul>
+                </div>
+                <div class="donations-content">
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-01.jpg" alt="donations-01">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 1</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-02.jpg" alt="donations-02">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 2</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-03.jpg" alt="donations-03">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 3</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-01.jpg" alt="donations-01">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 4</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-02.jpg" alt="donations-02">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 5</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-03.jpg" alt="donations-03">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 6</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-01.jpg" alt="donations-01">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 7</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-02.jpg" alt="donations-02">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 8</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="donations-main">
+                        <img src="assets/img/donations/donations-03.jpg" alt="donations-03">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <pre>Article 9</pre>
+                        <button type="button">Realizar una donación <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Donations End -->
+
+    <!-- Contact Start -->
+    <section class="container" id="Contact">
+        <div class="contact">
+            <div class="contact-content">
+                <h2>Apertura de nuestros servicios</h2>
+                <ul>
+                    <li>Martes <b>9:00 - 20Hrs.</b></li>
+                    <li>Miércoles <b>9:00 - 20Hrs.</b></li>
+                    <li>Jueves <b>9:00 - 20Hrs.</b></li>
+                    <li>Viernes <b>9:00 - 20Hrs.</b></li>
+                    <li>Sábado <b>10:00 - 19Hrs.</b></li>
+                    <li>Domingo <b>10:00 - 18Hrs.</b></li>
+                </ul>
+                <div class="contact-b"></div>
+            </div>
+            <div class="contact-main">
+                <h2>Hacer una Cita ahora</h2>
+                <label for="name">Nombre completo:</label>
+                <input type="text">
+                <label for="phone">Número telefonico</label>
+                <input type="text">
+                <select name="options" id="options">
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                    <option value="">Option 6</option>
+                </select>
+                <input type="date" name="" id="">
+                <button type="button">Realizar cita</button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
